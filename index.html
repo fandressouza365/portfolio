@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe | Full-Stack Builder & EdTech Founder</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Color Palette & Base Styles */
+        :root {
+            --bg-color: #F9F9F7; /* Off-White */
+            --text-color: #2D3436; /* Dark Grey */
+            --accent-color: #61A47B; /* Soft Green */
+            --accent-hover: #4F8964; 
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5 { font-weight: 700; color: var(--text-color); }
+        .text-accent { color: var(--accent-color); }
+        .bg-white-soft { background-color: #ffffff; }
+
+        /* Custom Button Styling */
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: white !important;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 600;
+            border: 2px solid var(--accent-color);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .btn-custom:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(97, 164, 123, 0.3);
+        }
+        
+        .btn-outline-custom {
+            background-color: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color) !important;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .btn-outline-custom:hover {
+            background-color: var(--accent-color);
+            color: white !important;
+            transform: translateY(-2px);
+        }
+
+        /* Card Elements */
+        .card-custom {
+            background: white;
+            border-radius: 24px;
+            border: none;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            padding: 2.5rem;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .card-custom:hover { transform: translateY(-5px); }
+
+        .tag {
+            background: rgba(97, 164, 123, 0.1);
+            color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        /* Hero Layout */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top" style="background-color: var(--bg-color); z-index: 1000;">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#" style="color: var(--text-color);">Felipe.</a>
+            <div class="d-none d-md-block">
+                <a href="#project" class="text-decoration-none mx-3 text-muted">Current Project</a>
+                <a href="#experience" class="text-decoration-none mx-3 text-muted">Experience</a>
+                <a href="#contact" class="btn-custom text-decoration-none ms-3" style="padding: 8px 20px;">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 py-5">
+                <div class="mb-4 tag">Senior Builder & Tech Founder</div>
+                <h1 class="display-3 mb-4">Hey, it's me, Felipe. <br>I build <span class="text-accent">safe AI systems</span> and data platforms.</h1>
+                <p class="lead mb-5" style="color: #636e72; max-width: 650px;">
+                    With 10+ years spanning full-stack development, complex data pipeline automation, and technical mentorship, I've spent the last year spearheading an R&D passion project: a structural safety net for kids interacting with AI.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#project" class="btn-custom text-decoration-none">See What I've Been Building</a>
+                    <a href="#experience" class="btn-outline-custom text-decoration-none"><i class="fab fa-github me-2"></i> View GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 1-Year Project Section -->
+    <section id="project" class="py-5 bg-white-soft">
+        <div class="container py-5">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-5">My R&D Sabbatical: KinderCrafts</h2>
+                    <p class="lead text-muted">Architecting a "Walled-Garden" AI education platform for ages 6–13.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 gx-lg-5">
+                <!-- The Adjusted Card with Grid layout for buttons -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="card-custom text-center" style="background: var(--bg-color);">
+                        <i class="fa-solid fa-shield-halved mb-3" style="font-size: 3.5rem; color: var(--accent-color);"></i>
+                        <h4 class="fw-bold">The Double-Lock Architecture</h4>
+                        <p class="text-muted small px-3">Dual LLMs competing to verify real-time safety constraints before content reaches the child.</p>
+                        
+                        <!-- NEW CLEAN LAYOUT FOR BUTTONS -->
+                        <div class="d-grid gap-3 mt-4 pt-2">
+                            <a href="#" class="btn-custom text-decoration-none">View Student App Prototype</a>
+                            <a href="#" class="btn-outline-custom text-decoration-none">View Parent/Teacher Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Description -->
+                <div class="col-lg-7 px-lg-4">
+                    <h3 class="mb-4">Moving from 'General AI' to 'Safe AI'</h3>
+                    <p>Over the last year, I stepped back from corporate operations to act as the technical Lead and Co-Founder for an EdTech initiative. While my partner focuses on business strategy, I've been exclusively focused on systems architecture and R&D.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1 fs-5"></i> 
+                            <span><strong>Real-time Moderation Middleware:</strong> Engineered a pipeline utilizing competing LLM APIs to filter harmful content via adversarial checking.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1 fs-5"></i> 
+                            <span><strong>Data Pipelines:</strong> Translated raw conversational AI data into actionable, visual SQL dashboards for teacher intervention.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-accent me-3 mt-1 fs-5"></i> 
+                            <span><strong>Open Source Vision:</strong> Currently stripping down the Python Double-Lock framework to open-source for the global EdTech developer community.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-5">
+        <div class="container py-5">
+            <h2 class="mb-5 text-center">The Journey So Far</h2>
+            <div class="row g-4">
+                
+                <!-- Indeed -->
+                <div class="col-lg-4">
+                    <div class="card-custom">
+                        <h5 class="fw-bold mb-1">Indeed.com</h5>
+                        <p class="text-accent fw-bold mb-1">Operations Technical Analyst I</p>
+                        <p class="small text-muted mb-3"><i class="far fa-calendar-alt me-1"></i> Dec 2018 - May 2025</p>
+                        <p class="small">Built and automated large-scale data aggregation pipelines using Python, SQL, and Regex to optimize internal job-indexing engines across international teams.</p>
+                        <div class="mt-3">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Institute -->
+                <div class="col-lg-4">
+                    <div class="card-custom">
+                        <h5 class="fw-bold mb-1">Code Institute</h5>
+                        <p class="text-accent fw-bold mb-1">Technical Mentor</p>
+                        <p class="small text-muted mb-3"><i class="far fa-calendar-alt me-1"></i> Mar 2020 - May 2025</p>
+                        <p class="small">Mentored 300+ students in full-stack development. Bridged theoretical curriculum with real-world industry architecture, maintaining top student satisfaction.</p>
+                        <div class="mt-3">
+                            <span class="tag">Mentorship</span>
+                            <span class="tag">Full-Stack Dev</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arvato / Bertelsmann -->
+                <div class="col-lg-4">
+                    <div class="card-custom">
+                        <h5 class="fw-bold mb-1">Arvato (Google Project)</h5>
+                        <p class="text-accent fw-bold mb-1">Front-End / BI Analyst</p>
+                        <p class="small text-muted mb-3"><i class="far fa-calendar-alt me-1"></i> Aug 2016 - Apr 2018</p>
+                        <p class="small">Developed internal BI tools and automated KPI workflows using Google Apps Script. Enforced Google policies and optimized analytical Tableau/SQL dashboards.</p>
+                        <div class="mt-3">
+                            <span class="tag">GCP / Apps Script</span>
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Anti-Spam Contact Section -->
+    <section id="contact" class="py-5 bg-white-soft">
+        <div class="container py-5 text-center">
+            <h2 class="mb-4">Let's Build Together</h2>
+            <p class="mb-5" style="max-width: 550px; margin: 0 auto;">Whether you are an investor looking at EdTech, an employer building a data team, or a dev passionate about AI safety, I'd love to connect.</p>
+            
+            <div class="card-custom mx-auto" style="max-width: 420px; background: var(--bg-color);">
+                <div class="mb-4">
+                    <i class="fa-solid fa-envelope text-accent" style="font-size: 2.5rem;"></i>
+                </div>
+                <!-- Interactive Button hides info initially -->
+                <button onclick="revealContactData()" id="revealBtn" class="btn-custom w-100 mb-3 text-decoration-none">Click to reveal Email & Phone</button>
+                
+                <!-- Hidden Info Box -->
+                <div id="contactInfo" style="display: none;">
+                    <p class="fw-bold fs-5 mb-1" id="e-box"></p>
+                    <p class="text-muted mb-4" id="p-box"></p>
+                    <a href="#" id="mailtoLnk" class="btn-outline-custom text-decoration-none w-100">Send me an Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-muted small" style="background-color: var(--bg-color);">
+        <div class="container border-top pt-4 border-secondary-subtle">
+            <p class="mb-0">© 2026 Felipe. Built by hand. Not scraped by bots.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // --- ANTI-SPAM LOGIC ---
+        function revealContactData() {
+            // Edit these to reflect your real details. Bots reading source won't parse this easily.
+            const e1 = "hello";      // prefix
+            const e2 = "felipealar"; // domain
+            const e3 = ".com";       // suffix
+
+            const p1 = "+123 ";      // Country code
+            const p2 = "456 ";       // Phone segment 1
+            const p3 = "7890";       // Phone segment 2
+            
+            const fullEmail = e1 + "@" + e2 + e3;
+            const fullPhone = p1 + p2 + p3;
+
+            // DOM UI switch
+            document.getElementById('revealBtn').style.display = 'none';
+            document.getElementById('contactInfo').style.display = 'block';
+            
+            // Injecting real values
+            document.getElementById('e-box').innerText = fullEmail;
+            document.getElementById('p-box').innerText = fullPhone;
+            document.getElementById('mailtoLnk').href = "mailto:" + fullEmail;
+        }
+
+        // --- SMOOTH SCROLLING ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
